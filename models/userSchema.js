@@ -57,11 +57,11 @@ userSchema.pre(/^find/, function (next) {
   next();
 });
 
-userSchema.pre("save", function (next) {
-  // if (!this.isModified("referral_user")) return next();
-  console.log("thisssssss", this.referral_user);
+// userSchema.pre("save", function (next) {
+//   // if (!this.isModified("referral_user")) return next();
+//   console.log("thisssssss", this.referral_user);
 
-  next();
-});
+//   next();
+// });
 
 module.exports = mongoose.model("user", userSchema);
